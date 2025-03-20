@@ -1,0 +1,136 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Importância da Água</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>A Importância da Água</h1>
+        <div class="water-animation"></div>
+    </header>
+
+    <main>
+        <section class="info-section">
+            <h2>A Água em Nossa Vida</h2>
+            <div class="explanation-text">
+                <p>A água é o recurso mais precioso que temos em nosso planeta! Vamos entender por que ela é tão importante:</p>
+            </div>
+            <div class="cards-container">
+                <div class="card">
+                    <svg class="icon" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M12,20A6,6 0 0,1 6,14C6,10 12,3.25 12,3.25C12,3.25 18,10 18,14A6,6 0 0,1 12,20Z"/>
+                    </svg>
+                    <h3>Nosso Corpo</h3>
+                    <p>Nosso corpo é feito de 70% de água! Ela é necessária para:</p>
+                    <ul class="simple-list">
+                        <li>Transportar nutrientes</li>
+                        <li>Regular nossa temperatura</li>
+                        <li>Ajudar na digestão</li>
+                        <li>Manter nossa pele saudável</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <svg class="icon" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M21,12C21,14.89 19.89,17.4 18,19.29V21H6V19.29C4.11,17.4 3,14.89 3,12C3,6.5 7.5,2 12,2C16.5,2 21,6.5 21,12Z"/>
+                    </svg>
+                    <h3>Na Natureza</h3>
+                    <p>A água é vital para o meio ambiente:</p>
+                    <ul class="simple-list">
+                        <li>Forma rios, lagos e oceanos</li>
+                        <li>Faz as plantas crescerem</li>
+                        <li>Mantém o clima equilibrado</li>
+                        <li>É casa para muitos animais</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <svg class="icon" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M12,3C7.58,3 4,4.79 4,7C4,9.21 7.58,11 12,11C16.42,11 20,9.21 20,7C20,4.79 16.42,3 12,3M4,9V12C4,14.21 7.58,16 12,16C16.42,16 20,14.21 20,12V9C20,11.21 16.42,13 12,13C7.58,13 4,11.21 4,9M4,14V17C4,19.21 7.58,21 12,21C16.42,21 20,19.21 20,17V14C20,16.21 16.42,18 12,18C7.58,18 4,16.21 4,14Z"/>
+                    </svg>
+                    <h3>No Dia a Dia</h3>
+                    <p>Usamos água em várias atividades:</p>
+                    <ul class="simple-list">
+                        <li>Para beber e cozinhar</li>
+                        <li>Tomar banho e lavar roupas</li>
+                        <li>Na agricultura e indústria</li>
+                        <li>Para gerar energia</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="water-facts">
+                <h3>Você Sabia?</h3>
+                <div class="facts-grid">
+                    <div class="fact-card">
+                        <h4>70%</h4>
+                        <p>do planeta Terra é coberto por água</p>
+                    </div>
+                    <div class="fact-card">
+                        <h4>3%</h4>
+                        <p>apenas da água do planeta é doce</p>
+                    </div>
+                    <div class="fact-card">
+                        <h4>2,5L</h4>
+                        <p>é quanto devemos beber por dia</p>
+                    </div>
+                    <div class="fact-card">
+                        <h4>110L</h4>
+                        <p>é usado em um banho de 15 minutos</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="conservation">
+            <h2>Como economizar água?</h2>
+            <div class="tips">
+                <ul>
+                    <li>Tome banhos mais curtos</li>
+                    <li>Feche a torneira ao escovar os dentes</li>
+                    <li>Conserte vazamentos</li>
+                    <li>Reutilize água da chuva</li>
+                    <li>Use a máquina de lavar com carga completa</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="game-selector">
+            <button class="game-button active" data-game="waterUsage">Consumo de Água</button>
+            <button class="game-button" data-game="rainCatcher">Coletor de Chuva</button>
+            <button class="game-button" data-game="quiz">Quiz da Água</button>
+        </section>
+
+        <div id="water-usage-game" class="game-container active">
+            <h2>Monitoramento de Consumo</h2>
+            <div class="meter-container">
+                <div id="water-gauge"></div>
+                <div id="game-status">Reduza o consumo de água!</div>
+                <button id="save-water">Economizar Água</button>
+                <button id="restart-game">Recomeçar Jogo</button>
+            </div>
+        </div>
+
+        <div id="rain-catcher-game" class="game-container">
+            <h2>Coletor de Água da Chuva</h2>
+            <canvas id="rain-game-canvas" width="400" height="400"></canvas>
+        </div>
+
+        <div id="water-quiz-game" class="game-container">
+            <h2>Quiz da Água</h2>
+            <div class="quiz-container">
+                <!-- Quiz content will be dynamically inserted here -->
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Vamos preservar este recurso vital para as futuras gerações!</p>
+        <p style="margin-top: 1rem;">Desenvolvido por Enzo Mereles</p>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
